@@ -13,7 +13,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { IconsProviderModule } from "./icons-provider.module";
 import { NzLayoutModule } from "ng-zorro-antd/layout";
 import { NzMenuModule } from "ng-zorro-antd/menu";
+import { NzBreadCrumbModule } from "ng-zorro-antd/breadcrumb";
 import th from "@angular/common/locales/th";
+import { LayoutsModule } from "./layouts/layouts.module";
+import { PagesModule } from "./pages/pages.module";
 
 registerLocaleData(en);
 registerLocaleData(th);
@@ -29,6 +32,9 @@ registerLocaleData(th);
 		IconsProviderModule,
 		NzLayoutModule,
 		NzMenuModule,
+		NzBreadCrumbModule,
+		LayoutsModule,
+		PagesModule,
 	],
 	providers: [{ provide: NZ_I18N, useValue: th_TH }],
 	bootstrap: [AppComponent],
